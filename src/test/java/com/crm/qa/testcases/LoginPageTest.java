@@ -31,6 +31,12 @@ public class LoginPageTest extends TestBase {
 		String title = loginPage.validateLoginPageTitle();
 		Assert.assertEquals(title, "#1 Free CRM software in the cloud for sales and service");
 	}
+	
+	@Test(priority=4)
+	public void pageurlTest() {
+		String URL = loginPage.validatePageURL();
+		Assert.assertEquals(URL, "https://www.freecrm.com/index.html");
+	}
 
 	@Test(priority=2)
 	public void crmlogoImageTest() {

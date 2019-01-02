@@ -39,6 +39,10 @@ public class LoginPage extends TestBase {
 		return driver.getTitle();
 	}
 	
+	public String validatePageURL() {
+		return driver.getCurrentUrl();
+	}
+	
 	public boolean validateCRMImage() {
 		return crmLogo.isDisplayed();
 	}
